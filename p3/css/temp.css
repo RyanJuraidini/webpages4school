@@ -1,0 +1,67 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center
+}
+
+body{
+    background-color:  #00bfff;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-size: 7rem;
+    line-height: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: purple;
+}
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+#f_to_c {
+    width: 5em;
+    background-color: #4CAF50;
+    font-size: 24px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#f_to_c:hover{
+    background-color: white;
+    color: black;
+}
+#c_to_f {
+    width: 5em;
+    background-color: yellow;
+    font-size: 24px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#c_to_f:hover{
+    background-color: white;
+    color: black;
+}
+ input[type=text]
+  {
+        width:14%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        
+    }

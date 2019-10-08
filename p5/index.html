@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+         <a style="font-family:courier;" class="navbar-brand" href="index.html"><u>Things to Convert:</u></a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#temp">Temperature Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Length">Length Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Weight">Weight Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Speed">Speed Converter</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <div class="content-wrapper">
+      
+    <div class="container-fluid">
+          <h2 class="mb-5">The Converter Using PHP</h2>
+                <h3 style="font-size:150%;text-align: center">This web app allows you to convert between some Imperial units and some Meteric units</h3>
+        <h3 style="font-size:150%;text-align: center">Please follow the instructions to begin your conversions<p style="color:black" >&#9786;</p></h3>
+        <p></p>
+     <hr>
+     <div class="container-fluid p-0">  
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="temp">
+     <div class="my-auto">
+    <h1>Temperature Converter</h1>
+    <h3 style="text-indent: 25px">Instructions: Insert a TEMPERATURE value, then choose which conversion you would like to calculate</h3>
+         
+<form action="./php/temp.php" method="post">
+        <input type="number" name="temperature">
+        <h4>&nbsp;Celsius to Fahrenheit&nbsp;</h4>
+    <input type="radio" name="unit" value="C">
+        <h5>&nbsp;Fahrenheit to Celsius&nbsp;</h5>
+    <input type="radio" name="unit" value="F">
+        <input type="submit" name="submit" value="Convert">
+ </form>
+    </div>
+    
+    </section>
+         <hr>
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Length">
+     <div class="my-auto">
+    <h1>Length Converter</h1>
+    <h3 style="text-indent: 25px">Instructions: Insert a LENGTH value, then choose which conversion you would like to calculate</h3>
+<form action="./php/temp.php" method="post">
+        <input type="number" name="length">
+        <h4>&nbsp;Feet to Meter(s)&nbsp;</h4>
+        <input type="radio" name="unit2" value="Ft">
+        <h5>&nbsp;Meter(s) to Feet&nbsp;</h5>
+        <input type="radio" name="unit2" value="M">
+        <input type="submit" name="submit2" value="Convert">
+ </form>
+    </div>
+    </section>      
+          <hr>
+         
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Weight">
+     <div class="my-auto">
+    <h1>Weight Converter</h1>
+    <h3 style="text-indent: 25px">Instructions: Insert a WEIGHT value, then choose which conversion you would like to calculate</h3>
+<form action="./php/temp.php" method="post">
+        <input type="number" name="weight">
+        <h4>&nbsp;Pound(s) to Kilogram(s)&nbsp;</h4>
+        <input type="radio" name="unit3" value="P">
+        <h5>&nbsp;Kilogram(s) to Pound(s)&nbsp;</h5>
+        <input type="radio" name="unit3" value="Kg">
+        <input type="submit" name="submit3" value="Convert">
+ </form>
+    </div>
+    </section>      
+         <hr>
+         
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Speed">
+     <div class="my-auto">
+    <h1>Speed Converter</h1>
+    <h3 style="text-indent: 25px">Instructions: Insert a SPEED value, then choose which conversion you would like to calculate.</h3>
+         <h3 style="font-size:120%">MPH= Miles per Hour | HPH= Kilometers per Hour</h3>
+<form action="./php/temp.php" method="post">
+        <input type="number" name="speed">
+        <h4>&nbsp;MPH to KPH&nbsp;</h4>
+        <input type="radio" name="unit4" value="MPH">
+        <h5>&nbsp;KPH to MPH&nbsp;</h5>
+        <input type="radio" name="unit4" value="KPH">
+        <input type="submit" name="submit4" value="Convert">
+ </form>
+    </div>
+    </section>      
+         <hr>
+      </div>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+html{
+background: #343a40;
+margin-bottom: 200px;
+margin-right: 50px;
+margin-left: 50px;
+margin-top: 50px;
+}
+
+body{
+    line-height: 1.6;
+    border-top: 20px;
+    background-color: white;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    line-height: 1.6;
+    width: 5em;
+    background-color: #737373;
+    font-size: 50px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+
+}
+
+a:hover{
+    background-color: #b3b3b3;
+    color: black;
+}
+
